@@ -4,9 +4,9 @@
 
 > **Archived — September 2026. Development has ended.** The ABCDE warehouse server has been powered off and BEACN retired as a
 > stake pool (effective epoch 656). The code, findings and methods here stay public, and the
-> [explorer](https://beacnpool.github.io/ABCDE/) is a static final snapshot. The last export of the derived
-> warehouse data is on the [`archive/final-2026-09`](https://github.com/BEACNpool/ABCDE/tree/archive/final-2026-09)
-> branch. Everything else BEACN left behind: [BEACN legacy archive](https://beacnpool.github.io/ABCDE/pool/).
+> [explorer](https://beacnlabs.github.io/ABCDE/) is a static final snapshot. The last export of the derived
+> warehouse data is on the [`archive/final-2026-09`](https://github.com/BEACNLabs/ABCDE/tree/archive/final-2026-09)
+> branch. Everything else BEACN left behind: [BEACN legacy archive](https://beacnlabs.github.io/ABCDE/pool/).
 
 ### A BEACN Cardano Data Explorer
 
@@ -34,9 +34,9 @@ No node. No relay. No db-sync. No API key. Just `git clone` and ask.
 
 <br>
 
-[![Watch the 90-second tour](https://beacnpool.github.io/ABCDE/og/main.png)](https://beacnpool.github.io/ABCDE/media/abcde-showcase-720p.mp4)
+[![Watch the 90-second tour](https://beacnlabs.github.io/ABCDE/og/main.png)](https://beacnlabs.github.io/ABCDE/media/abcde-showcase-720p.mp4)
 
-**[▶ Watch the 90-second tour](https://beacnpool.github.io/ABCDE/media/abcde-showcase-720p.mp4)** — a real clone, a real Claude Code session, and the NIGHT bridge-drain receipts pulled live.
+**[▶ Watch the 90-second tour](https://beacnlabs.github.io/ABCDE/media/abcde-showcase-720p.mp4)** — a real clone, a real Claude Code session, and the NIGHT bridge-drain receipts pulled live.
 
 </div>
 
@@ -73,7 +73,7 @@ unpublished warehouse queries are not implied by that reproducibility.
 ## ⚡ 30-second quickstart
 
 ```bash
-git clone https://github.com/BEACNpool/ABCDE.git
+git clone https://github.com/BEACNLabs/ABCDE.git
 cd ABCDE
 python -m venv .venv && source .venv/bin/activate    # Windows: py -3 -m venv .venv ; .venv\Scripts\activate
 python -m pip install -r requirements/base.txt
@@ -128,8 +128,8 @@ SQL do not depend on that CLI.
 | 🧭 **Control indicators** | Snapshot custody indicators per trace-reached stake key — dormancy, unclaimed rewards, certificate liveness, batch-operation cohorts — with a graded `fe_control_consistency` score. |
 | 🌙 **NIGHT token** | Companion module: supply and concentration rollups, a compact holder cut, an optional full graph at its recorded snapshot, and a receipt-backed investigation of the July 2026 Wanchain bridge drain and attacker flow. |
 | 🧾 **Freshness catalog** | Source-file row counts, hashes, age and snapshot sensitivity. Use it with module receipts to establish the relevant chain boundary. |
-| 📡 **Relay health** | Pool relay registrations at the module snapshot, shared endpoint strings, registration history and observed reachability. Shared infrastructure does not identify ownership; an unanswered probe is not proof of an offline relay. Live page: **[relays.html](https://beacnpool.github.io/ABCDE/relays.html)** · [F21](findings/F21_relay_registration_and_reachability.md) · [method](docs/27_RELAY_HEALTH_METHOD.md). |
-| 🧮 **MINFREE** | A slider for `minPoolCost`. The floor is a flat ₳ tax taken before delegators see a lovelace — raise it and a 1M ₳ pool gets worse, saturated pools barely notice. Live: **[minfree.html](https://beacnpool.github.io/ABCDE/minfree.html)**. |
+| 📡 **Relay health** | Pool relay registrations at the module snapshot, shared endpoint strings, registration history and observed reachability. Shared infrastructure does not identify ownership; an unanswered probe is not proof of an offline relay. Live page: **[relays.html](https://beacnlabs.github.io/ABCDE/relays.html)** · [F21](findings/F21_relay_registration_and_reachability.md) · [method](docs/27_RELAY_HEALTH_METHOD.md). |
+| 🧮 **MINFREE** | A slider for `minPoolCost`. The floor is a flat ₳ tax taken before delegators see a lovelace — raise it and a 1M ₳ pool gets worse, saturated pools barely notice. Live: **[minfree.html](https://beacnlabs.github.io/ABCDE/minfree.html)**. |
 | 📡 **Exchange tracers** | A community exchange-tracer dataset (`tracer_*`); crowd-sourced attribution, kept for reference and graded accordingly. |
 
 Ground your queries on the generated schema — [`docs/SCHEMA.md`](docs/SCHEMA.md)
@@ -252,7 +252,7 @@ for the compact / release / warehouse tiers and how they differ.
 <div align="center">
 <br>
 
-**Built by [BEACNpool](https://github.com/BEACNpool) · MIT licensed · on-chain truth, grass-roots tools**
+**Built by [BEACNpool](https://github.com/BEACNLabs) · MIT licensed · on-chain truth, grass-roots tools**
 
 *If ABCDE helped you understand where the genesis ADA went, ⭐ the repo and clone it forward.*
 

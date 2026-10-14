@@ -20,7 +20,7 @@ let MODEL = 'code', OS = 'mac';
   wirePickers(); renderSteps(); renderAsk();
 })();
 
-const SITE = 'https://beacnpool.github.io/ABCDE';
+const SITE = 'https://beacnlabs.github.io/ABCDE';
 function shareUrl(h) {
   const text = `${h.headline}  (on-chain, graded, verify it yourself 👇)`;
   const url = `${SITE}/r/${h.slug}.html`;
@@ -63,7 +63,7 @@ function renderStats() {
 }
 
 // ---------------- get started: pickers + command blocks ----------------
-const REPO = 'https://github.com/BEACNpool/ABCDE.git';
+const REPO = 'https://github.com/BEACNLabs/ABCDE.git';
 function installStep(os) {
   if (os === 'win') return {
     title: 'Clone & set up (PowerShell)', lang: 'powershell',

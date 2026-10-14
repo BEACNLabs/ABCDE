@@ -26,7 +26,7 @@ SCRIPT = re.compile(r"<script(?![^>]*\bsrc=)[^>]*>(.*?)</script>", re.S | re.I)
 # silently otherwise -- the README's tour video 404'd for 34 days before anyone
 # noticed, and a broken link in the section that says "check my work" is worse
 # than no link at all.
-REPO_LINK = re.compile(r"https://github\.com/BEACNpool/ABCDE/blob/main/([^\"'\s>)]+)")
+REPO_LINK = re.compile(r"https://github\.com/(?:BEACNLabs|BEACNpool)/ABCDE/blob/main/([^\"'\s>)]+)")
 
 
 def main() -> int:
