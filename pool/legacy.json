@@ -1047,19 +1047,19 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/ABCDE"
+     "https://github.com/BEACNLabs/ABCDE"
     ],
     [
      "Watch how to use it",
-     "https://beacnpool.github.io/ABCDE/films/abcde-explorer.mp4"
+     "https://beacnlabs.github.io/ABCDE/films/abcde-explorer.mp4"
     ],
     [
      "Explorer",
-     "https://beacnpool.github.io/ABCDE/"
+     "https://beacnlabs.github.io/ABCDE/"
     ],
     [
      "Final data",
-     "https://github.com/BEACNpool/ABCDE/tree/archive/final-2026-09"
+     "https://github.com/BEACNLabs/ABCDE/tree/archive/final-2026-09"
     ]
    ]
   },
@@ -1071,11 +1071,11 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/ledger-scrolls"
+     "https://github.com/BEACNLabs/ledger-scrolls"
     ],
     [
      "Library",
-     "https://beacnpool.github.io/ledger-scrolls/"
+     "https://beacnlabs.github.io/ledger-scrolls/"
     ]
    ]
   },
@@ -1087,11 +1087,11 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/NFT-Studio"
+     "https://github.com/BEACNLabs/NFT-Studio"
     ],
     [
      "Studio",
-     "https://beacnpool.github.io/NFT-Studio/"
+     "https://beacnlabs.github.io/NFT-Studio/"
     ]
    ]
   },
@@ -1103,11 +1103,11 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/beacn-drep-core"
+     "https://github.com/BEACNLabs/beacn-drep-core"
     ],
     [
      "Votes",
-     "https://beacnpool.github.io/beacn-drep-web/"
+     "https://beacnlabs.github.io/beacn-drep-web/"
     ]
    ]
   },
@@ -1119,7 +1119,7 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/beacn-drep-soul"
+     "https://github.com/BEACNLabs/beacn-drep-soul"
     ]
    ]
   },
@@ -1131,7 +1131,7 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/beacn-drep-resources"
+     "https://github.com/BEACNLabs/beacn-drep-resources"
     ]
    ]
   },
@@ -1143,11 +1143,11 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/beacn-drep-web"
+     "https://github.com/BEACNLabs/beacn-drep-web"
     ],
     [
      "Archive",
-     "https://beacnpool.github.io/beacn-drep-web/"
+     "https://beacnlabs.github.io/beacn-drep-web/"
     ]
    ]
   },
@@ -1159,7 +1159,7 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/LAN-Games"
+     "https://github.com/BEACNLabs/LAN-Games"
     ]
    ]
   },
@@ -1171,7 +1171,7 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/experimental-cardano-pool-mcp"
+     "https://github.com/BEACNLabs/experimental-cardano-pool-mcp"
     ]
    ]
   },
@@ -1183,11 +1183,11 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/cardano-devtools-directory"
+     "https://github.com/BEACNLabs/cardano-devtools-directory"
     ],
     [
      "Directory",
-     "https://beacnpool.github.io/cardano-devtools-directory/"
+     "https://beacnlabs.github.io/cardano-devtools-directory/"
     ]
    ]
   },
@@ -1199,7 +1199,7 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/Cardano-Data-Explorer"
+     "https://github.com/BEACNLabs/Cardano-Data-Explorer"
     ]
    ]
   },
@@ -1211,7 +1211,7 @@
    "links": [
     [
      "Source",
-     "https://github.com/BEACNpool/secondfi-incident-audit"
+     "https://github.com/BEACNLabs/secondfi-incident-audit"
     ]
    ]
   }
@@ -1247,7 +1247,7 @@
   {
    "date": "2026-01-03",
    "title": "Ledger Scrolls goes public",
-   "html": "An open reader that rebuilds data straight from Cardano. <a href=\"https://github.com/BEACNpool/ledger-scrolls\">Source</a>"
+   "html": "An open reader that rebuilds data straight from Cardano. <a href=\"https://github.com/BEACNLabs/ledger-scrolls\">Source</a>"
   },
   {
    "date": "2026-01-09",
@@ -1292,7 +1292,7 @@
   {
    "date": "2026-03-31",
    "title": "ABCDE is published",
-   "html": "Every founder coin, followed to today. <a href=\"https://beacnpool.github.io/ABCDE/\">Explorer</a>",
+   "html": "Every founder coin, followed to today. <a href=\"https://beacnlabs.github.io/ABCDE/\">Explorer</a>",
    "milestone": true
   },
   {
@@ -1303,12 +1303,12 @@
   {
    "date": "2026-06-15",
    "title": "The automated BEACN DRep registers",
-   "html": "Fifty votes through 31 August (34 No, 8 Yes, 8 Abstain), each published with its reasoning. <a href=\"https://beacnpool.github.io/beacn-drep-web/\">Voting archive</a>"
+   "html": "Fifty votes through 31 August (34 No, 8 Yes, 8 Abstain), each published with its reasoning. <a href=\"https://beacnlabs.github.io/beacn-drep-web/\">Voting archive</a>"
   },
   {
    "date": "2026-06-24",
    "title": "The SecondFi incident audit is published",
-   "html": "<a href=\"https://github.com/BEACNpool/secondfi-incident-audit\">Audit package</a>"
+   "html": "<a href=\"https://github.com/BEACNLabs/secondfi-incident-audit\">Audit package</a>"
   },
   {
    "date": "2026-07-03",
@@ -1323,7 +1323,7 @@
   {
    "date": "2026-07-09",
    "title": "Ledger Chess, playable from a scroll",
-   "html": "<a href=\"https://beacnpool.github.io/ledger-scrolls/ledger-chess.html\">Play</a>"
+   "html": "<a href=\"https://beacnlabs.github.io/ledger-scrolls/ledger-chess.html\">Play</a>"
   },
   {
    "date": "2026-07-10",
@@ -1333,12 +1333,12 @@
   {
    "date": "2026-07-17",
    "title": "LAN Games is released",
-   "html": "<a href=\"https://github.com/BEACNpool/LAN-Games\">Source</a>"
+   "html": "<a href=\"https://github.com/BEACNLabs/LAN-Games\">Source</a>"
   },
   {
    "date": "2026-07-29",
    "title": "oligarCH begins",
-   "html": "BURN YOU TO THE GROUND is minted; all eight timed pieces exist by the next day, and the maker opens after them. <a href=\"https://beacnpool.github.io/ABCDE/oligarCH/\">Series</a>"
+   "html": "BURN YOU TO THE GROUND is minted; all eight timed pieces exist by the next day, and the maker opens after them. <a href=\"https://beacnlabs.github.io/ABCDE/oligarCH/\">Series</a>"
   },
   {
    "date": "2026-08-04",
@@ -1349,7 +1349,7 @@
   {
    "date": "2026-08-29",
    "title": "BEACN vs grokbot",
-   "html": "Two agents, identical ADA, one encrypted channel between them. The match closed 12 September. <a href=\"https://beacnpool.github.io/ABCDE/match.html\">Final scorecard</a>"
+   "html": "Two agents, identical ADA, one encrypted channel between them. The match closed 12 September. <a href=\"https://beacnlabs.github.io/ABCDE/match.html\">Final scorecard</a>"
   },
   {
    "date": "2026-09-05",
@@ -1359,7 +1359,7 @@
   {
    "date": "2026-09-06",
    "title": "NFT Studio launches",
-   "html": "Six on-chain games, STARFALL, AFTERLIGHT, NINEFOLD and three Harmonic Machines are minted the same day. <a href=\"https://beacnpool.github.io/NFT-Studio/\">Studio</a>"
+   "html": "Six on-chain games, STARFALL, AFTERLIGHT, NINEFOLD and three Harmonic Machines are minted the same day. <a href=\"https://beacnlabs.github.io/NFT-Studio/\">Studio</a>"
   },
   {
    "date": "2026-09-09",

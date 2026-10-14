@@ -168,7 +168,7 @@
     text(c,p.title,60,476,20,C.white,'left',800,690);
     lines(c,p.outcome,60,501,686,13,eventColor,2);
     text(c,'Trade result is separate from match P&L. Replays do not transfer ADA.',400,563,10,C.muted,'center',600,734);
-    text(c,'beacnpool.github.io/ABCDE/match.html',400,579,10,C.cyan,'center',800,730,true);
+    text(c,'beacnlabs.github.io/ABCDE/match.html',400,579,10,C.cyan,'center',800,730,true);
     c.restore();
   }
   function renderFrame(ctx,tNormalized,model) {

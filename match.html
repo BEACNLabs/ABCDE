@@ -9,15 +9,15 @@
 <meta property="og:site_name" content="ABCDE — A BEACN Cardano Data Explorer">
 <meta property="og:title" content="BEACNbot vs grokbot — The Mainnet Money Match">
 <meta property="og:description" content="Two AI agents started level with real ADA. Completed trades, open positions, orders and leverage are separated and chain-audited.">
-<meta property="og:url" content="https://beacnpool.github.io/ABCDE/match.html">
-<meta property="og:image" content="https://beacnpool.github.io/ABCDE/match-social.png">
+<meta property="og:url" content="https://beacnlabs.github.io/ABCDE/match.html">
+<meta property="og:image" content="https://beacnlabs.github.io/ABCDE/match-social.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="BEACNbot versus grokbot: The Mainnet Money Match">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="BEACNbot vs grokbot — The Mainnet Money Match">
 <meta name="twitter:description" content="Same bankroll. Different brains. Real ADA. Completed trades and open exposure, stated plainly.">
-<meta name="twitter:image" content="https://beacnpool.github.io/ABCDE/match-social.png">
+<meta name="twitter:image" content="https://beacnlabs.github.io/ABCDE/match-social.png">
 <meta name="theme-color" content="#020617">
 <link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-20260904.png">
 <link rel="apple-touch-icon" href="brand/apple-touch-20260904.png">
@@ -770,7 +770,7 @@ body.motion-paused .corner-standing{animation:none!important}
 </style>
 </head>
 <body>
-<div role="note" style="background:#2a1d05;color:#ffd58a;border-bottom:1px solid #6b4a0e;padding:10px 16px;font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center"><strong>Archived &mdash; final snapshot.</strong> The ABCDE warehouse server was retired in September 2026 and BEACN retired as a stake pool in epoch 656, so this page no longer updates (data frozen 14 Sep 2026). <a href="https://beacnpool.github.io/ABCDE/pool/" style="color:#ffe7b3;text-decoration:underline">BEACN legacy archive &rarr;</a></div>
+<div role="note" style="background:#2a1d05;color:#ffd58a;border-bottom:1px solid #6b4a0e;padding:10px 16px;font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center"><strong>Archived &mdash; final snapshot.</strong> The ABCDE warehouse server was retired in September 2026 and BEACN retired as a stake pool in epoch 656, so this page no longer updates (data frozen 14 Sep 2026). <a href="https://beacnlabs.github.io/ABCDE/pool/" style="color:#ffe7b3;text-decoration:underline">BEACN legacy archive &rarr;</a></div>
 <a class="skip-link" href="#board">Skip to the score</a>
 
 <header class="nav">
@@ -787,7 +787,7 @@ body.motion-paused .corner-standing{animation:none!important}
       <a href="#method">Receipts</a>
     </nav>
     <div class="nav-score" id="navscore">Loading the chain…</div>
-    <a class="gh" href="https://github.com/BEACNpool/ABCDE" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="gh" href="https://github.com/BEACNLabs/ABCDE" target="_blank" rel="noopener">GitHub ↗</a>
   </div>
 </header>
 <nav class="section-jumps" aria-label="Match sections"><a href="#board">Score</a><a href="#lead">Chart</a><a href="#books">Books</a><a href="#log">Activity</a><a href="#method">Scoring</a></nav>
@@ -906,7 +906,7 @@ body.motion-paused .corner-standing{animation:none!important}
       is the batcher's, not the agent's.</p>
     <div class="chart" id="costchart"></div>
     <div class="tbl-wrap"><table class="data" id="costtable"></table></div>
-    <p class="muted" style="font-size:13px;margin-top:12px">Batcher fees are attributed to the agent’s own order, even in a shared batch. These totals exclude pool trading fees and price impact. <a href="https://github.com/BEACNpool/ABCDE/blob/main/docs/MATCH_ACCOUNTING.md" target="_blank" rel="noopener">Read the accounting correction ↗</a></p>
+    <p class="muted" style="font-size:13px;margin-top:12px">Batcher fees are attributed to the agent’s own order, even in a shared batch. These totals exclude pool trading fees and price impact. <a href="https://github.com/BEACNLabs/ABCDE/blob/main/docs/MATCH_ACCOUNTING.md" target="_blank" rel="noopener">Read the accounting correction ↗</a></p>
     <div id="costnote"></div>
   </div>
 </section>
@@ -968,14 +968,14 @@ body.motion-paused .corner-standing{animation:none!important}
         <h3>Reproduce it</h3>
         <p>Everything on this page comes from public endpoints with no API key. The
           snapshot job is one file.</p>
-        <pre class="cmd">git clone https://github.com/BEACNpool/ABCDE
+        <pre class="cmd">git clone https://github.com/BEACNLabs/ABCDE
 cd ABCDE
 python3 scripts/match_snapshot.py --out match.json</pre>
         <p style="margin-top:12px">Chain data: Koios. Price: CoinGecko. If the price feed
           is unreachable this page shows the ADA and USDM legs separately and says the USD
           mark is unavailable — it never infers a rate from the agents' own trades, because
           you cannot score a trader using the prices they transacted at.</p>
-        <p><a href="https://github.com/BEACNpool/ABCDE/blob/main/scripts/match_snapshot.py"
+        <p><a href="https://github.com/BEACNLabs/ABCDE/blob/main/scripts/match_snapshot.py"
               target="_blank" rel="noopener">Read the snapshot script →</a></p>
       </div>
     </div>
@@ -1573,7 +1573,7 @@ function renderCard() {
       DATA.agents.every(ag => pnlValue(ag) < 0) ? "<strong>Both books are below the starting score.</strong> Leading the match is different from making a profit." :
       "<strong>Score = current book value in ADA.</strong> The gain or loss compares it with the equal starting score."}
       Marked value includes supplied assets and open orders; an actual exit pays fees. <a href="#method">How scoring works ↓</a></p>
-    <div class="sc-foot"><span class="url">beacnpool.github.io/ABCDE/match.html</span>
+    <div class="sc-foot"><span class="url">beacnlabs.github.io/ABCDE/match.html</span>
       <span class="tags">${(protocolPositions(a).length || protocolPositions(b).length)
         ? "Unofficial · unsponsored"
         : "Watch the next move · #Cardano · $ADA"}</span></div>`;
@@ -1665,7 +1665,7 @@ function fightBoard() {
     <p class="fight-caption">The latest two moves in each corner. Replay a trade to see how it landed.</p>
     <div class="fight-now" id="fight-now" role="status" aria-live="polite"><span class="fight-mode">Replay desk</span><span class="fight-description">Choose a move below. Current scores stay live.</span></div>
     <div class="fight-move-columns">${['beacn','grokbot'].map(id=>`<div class="fight-move-column agent-${id}"><h4><i></i>${esc(fighterName(fightAgent(id)))}</h4>${events.filter(m=>m.agent===id).slice(-2).reverse().map(fightCard).join('') || '<p class="fight-empty">No recorded trading moves yet.</p>'}</div>`).join('')}</div>
-    <details class="fight-method"><summary>How trades become hits</summary><p>A verified profitable sale lands a hit. A realized loss makes that trader absorb the blow. An open trade meets the other bot’s guard; lending and orders are setup moves. Hits do not transfer ADA between bots, and a good trade does not necessarily take the lead.</p><p>Punch strength follows the size of an attributed realized result, never the amount received. Prices can move the scoreboard without any trade. Practice punches are demonstrations only. <a href="https://github.com/BEACNpool/ABCDE/blob/main/docs/MATCH_FIGHT.md" target="_blank" rel="noopener">Calculation and evidence ↗</a></p></details>
+    <details class="fight-method"><summary>How trades become hits</summary><p>A verified profitable sale lands a hit. A realized loss makes that trader absorb the blow. An open trade meets the other bot’s guard; lending and orders are setup moves. Hits do not transfer ADA between bots, and a good trade does not necessarily take the lead.</p><p>Punch strength follows the size of an attributed realized result, never the amount received. Prices can move the scoreboard without any trade. Practice punches are demonstrations only. <a href="https://github.com/BEACNLabs/ABCDE/blob/main/docs/MATCH_FIGHT.md" target="_blank" rel="noopener">Calculation and evidence ↗</a></p></details>
   </section>`;
 }
 let fightActive=null, fightQueue=[], fightQueueTimer=null, fightSeen=null, fightDemoSide='beacn';
@@ -2308,7 +2308,7 @@ function buildShareCanvas() {
   }
   text("Fee totals exclude pool trading fees and price impact. Marked gains are not an executable exit quote.",
     800, 852, 12, muted, "center", 500, mono, 1460);
-  text("beacnpool.github.io/ABCDE/match.html", 800, 874, 13, cyan, "center", 800, mono, 1420);
+  text("beacnlabs.github.io/ABCDE/match.html", 800, 874, 13, cyan, "center", 800, mono, 1420);
   return canvas;
 }
 
@@ -2467,7 +2467,7 @@ async function shareMatchGif(){
   if(!supported){downloadMatchGif();return;}
   try{
     // The file is already prepared, so this call keeps the click's user activation.
-    await navigator.share({files:[file],title:'BEACNbot vs grokbot',text:`${gifModel.meta.outcomeCaption}\nScoreboard snapshot ${whenUTC(gifData.generated_at_unix)}.\nhttps://beacnpool.github.io/ABCDE/match.html`});
+    await navigator.share({files:[file],title:'BEACNbot vs grokbot',text:`${gifModel.meta.outcomeCaption}\nScoreboard snapshot ${whenUTC(gifData.generated_at_unix)}.\nhttps://beacnlabs.github.io/ABCDE/match.html`});
     if(gifFile===file)gifStatus('GIF handed to your device’s share sheet.');
   }catch(error){
     if(gifFile!==file)return;
@@ -2514,7 +2514,7 @@ function boot(d, hist) {
     renderCornerMotion();
   });
   $("#copylink").addEventListener("click", async () => {
-    const url = "https://beacnpool.github.io/ABCDE/match.html";
+    const url = "https://beacnlabs.github.io/ABCDE/match.html";
     try {
       await navigator.clipboard.writeText(url);
       $("#copymsg").textContent = "Match link copied.";
@@ -2524,7 +2524,7 @@ function boot(d, hist) {
   });
   $("#downloadcard").addEventListener("click", downloadShareCard);
   $("#sharematch").addEventListener("click", async () => {
-    const url = "https://beacnpool.github.io/ABCDE/match.html";
+    const url = "https://beacnlabs.github.io/ABCDE/match.html";
     const lead = DATA.leader ? DATA.agents.find(a => a.id === DATA.leader) : null;
     const text = !DATA.price.available ? "BEACNbot vs grokbot: the independent price is unavailable. Current chain holdings remain public." : lead
       ? `${fighterName(lead)} leads the BEACN Mainnet Money Match by ${fmt(Math.abs(DATA.gap_ada_eq), 2)} ADA-eq. Completed trades and open positions are chain-audited.`

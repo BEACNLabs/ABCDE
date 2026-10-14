@@ -9,13 +9,13 @@
 <meta property="og:site_name" content="ABCDE — A BEACN Cardano Data Explorer">
 <meta property="og:title" content="Relay Health — every pool's relays, checked">
 <meta property="og:description" content="Registered relays for every current Cardano pool, the endpoints shared between pools, and a two-pass handshake sweep. Registration is FACT; reachability is an observation, never a verdict.">
-<meta property="og:image" content="https://beacnpool.github.io/ABCDE/og/relay-overview.png">
+<meta property="og:image" content="https://beacnlabs.github.io/ABCDE/og/relay-overview.png">
 <meta property="og:image:width" content="2400"><meta property="og:image:height" content="1862">
-<meta property="og:url" content="https://beacnpool.github.io/ABCDE/relays.html">
+<meta property="og:url" content="https://beacnlabs.github.io/ABCDE/relays.html">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Relay Health — every pool's relays, checked">
 <meta name="twitter:description" content="Registered relays for every current Cardano pool, shared infrastructure, and a two-pass handshake sweep. Graded and reproducible.">
-<meta name="twitter:image" content="https://beacnpool.github.io/ABCDE/og/relay-overview.png">
+<meta name="twitter:image" content="https://beacnlabs.github.io/ABCDE/og/relay-overview.png">
 <meta name="theme-color" content="#020617">
 <link rel="icon" type="image/png" sizes="32x32" href="brand/favicon-20260904.png">
 <link rel="apple-touch-icon" href="brand/apple-touch-20260904.png">
@@ -89,7 +89,7 @@
 </style>
 </head>
 <body>
-<div role="note" style="background:#2a1d05;color:#ffd58a;border-bottom:1px solid #6b4a0e;padding:10px 16px;font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center"><strong>Archived &mdash; final snapshot.</strong> The ABCDE warehouse server was retired in September 2026 and BEACN retired as a stake pool in epoch 656, so this page no longer updates (data frozen 14 Sep 2026). <a href="https://beacnpool.github.io/ABCDE/pool/" style="color:#ffe7b3;text-decoration:underline">BEACN legacy archive &rarr;</a></div>
+<div role="note" style="background:#2a1d05;color:#ffd58a;border-bottom:1px solid #6b4a0e;padding:10px 16px;font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center"><strong>Archived &mdash; final snapshot.</strong> The ABCDE warehouse server was retired in September 2026 and BEACN retired as a stake pool in epoch 656, so this page no longer updates (data frozen 14 Sep 2026). <a href="https://beacnlabs.github.io/ABCDE/pool/" style="color:#ffe7b3;text-decoration:underline">BEACN legacy archive &rarr;</a></div>
 
 <header class="nav">
   <div class="wrap">
@@ -100,7 +100,7 @@
       <a href="relays.html">Relay health</a>
       <a href="minfree.html">Minfree</a>
     </nav>
-    <a class="gh" href="https://github.com/BEACNpool/ABCDE" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="gh" href="https://github.com/BEACNLabs/ABCDE" target="_blank" rel="noopener">GitHub ↗</a>
   </div>
 </header>
 
@@ -126,7 +126,7 @@
          placeholder="ticker or pool id — try BEACN, ZZZ, or paste a pool1…">
   <div id="q-out"></div>
 
-  <p class="srcline">Reads <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a> and <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_pool_endpoints.csv">relay_pool_endpoints.csv</a>. <b>Mixed:</b> what a pool registered comes from db-sync and reproduces exactly; the last-sweep column is an observation and will not.</p>
+  <p class="srcline">Reads <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a> and <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_pool_endpoints.csv">relay_pool_endpoints.csv</a>. <b>Mixed:</b> what a pool registered comes from db-sync and reproduces exactly; the last-sweep column is an observation and will not.</p>
 </div></section>
 
 <section class="rsec" id="grading"><div class="wrap">
@@ -158,7 +158,7 @@
     <tbody></tbody></table></div>
 
 
-  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a>, extracted by <a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_registration.sql">build_relay_registration.sql</a>. Reproducible from db-sync alone: run it and you should get these exact rows.</p>
+  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a>, extracted by <a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_registration.sql">build_relay_registration.sql</a>. Reproducible from db-sync alone: run it and you should get these exact rows.</p>
 </div></section>
 
 <section class="rsec" id="reachability"><div class="wrap">
@@ -191,7 +191,7 @@
     <tbody></tbody></table></div>
 
 
-  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_endpoint_status.csv">relay_endpoint_status.csv</a>, <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a>, produced by <a href="https://github.com/BEACNpool/ABCDE/blob/main/scripts/relay_probe.py">relay_probe.py</a>, <a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_reachability.sql">build_relay_reachability.sql</a>. This half is a live measurement, so your own run will differ from this one.</p>
+  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_endpoint_status.csv">relay_endpoint_status.csv</a>, <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a>, produced by <a href="https://github.com/BEACNLabs/ABCDE/blob/main/scripts/relay_probe.py">relay_probe.py</a>, <a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_reachability.sql">build_relay_reachability.sql</a>. This half is a live measurement, so your own run will differ from this one.</p>
 </div></section>
 
 <section class="rsec" id="block-producers"><div class="wrap">
@@ -206,7 +206,7 @@
   <div class="warn" id="norelay"></div>
 
 
-  <p class="srcline">Aggregates <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a>. <b>Mixed:</b> the block counts come from db-sync via <a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_reachability.sql">build_relay_reachability.sql</a> and reproduce exactly; the reachability columns come from the sweep and will not.</p>
+  <p class="srcline">Aggregates <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a>. <b>Mixed:</b> the block counts come from db-sync via <a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_reachability.sql">build_relay_reachability.sql</a> and reproduce exactly; the reachability columns come from the sweep and will not.</p>
 </div></section>
 
 <section class="rsec" id="registration-history"><div class="wrap">
@@ -245,7 +245,7 @@
     taken on trust.</p>
 
 
-  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_registration_changes.csv">relay_registration_changes.csv</a>, <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a>, extracted by <a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_registration.sql">build_relay_registration.sql</a>. Reproducible from db-sync alone: run it and you should get these exact rows. Certificate history is append-only, so it is the same for everyone, forever.</p>
+  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_registration_changes.csv">relay_registration_changes.csv</a>, <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health.csv</a>, extracted by <a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_registration.sql">build_relay_registration.sql</a>. Reproducible from db-sync alone: run it and you should get these exact rows. Certificate history is append-only, so it is the same for everyone, forever.</p>
 </div></section>
 
 <section class="rsec" id="defects"><div class="wrap">
@@ -267,7 +267,7 @@
     URL where a hostname was wanted. It is here as a service, not as an accusation. If one of these
     is yours, the fix is a single re-registration transaction.</div>
 
-  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_registration_defects.csv">relay_registration_defects.csv</a>, extracted by <a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_defects.sql">build_relay_defects.sql</a>. Reproducible from db-sync alone: run it and you should get these exact rows.</p>
+  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_registration_defects.csv">relay_registration_defects.csv</a>, extracted by <a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_defects.sql">build_relay_defects.sql</a>. Reproducible from db-sync alone: run it and you should get these exact rows.</p>
 </div></section>
 
 <section class="rsec" id="borrowed-infrastructure"><div class="wrap">
@@ -295,7 +295,7 @@
     reach <i>its</i> node, and its inbound load sits on infrastructure it does not run.</p>
 
 
-  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_foreign_infrastructure.csv">relay_foreign_infrastructure.csv</a>, extracted by <a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_foreign_infra.sql">build_relay_foreign_infra.sql</a>. Reproducible from db-sync alone: run it and you should get these exact rows.</p>
+  <p class="srcline">Every number above aggregates <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_foreign_infrastructure.csv">relay_foreign_infrastructure.csv</a>, extracted by <a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_foreign_infra.sql">build_relay_foreign_infra.sql</a>. Reproducible from db-sync alone: run it and you should get these exact rows.</p>
 </div></section>
 
 <section class="rsec" id="networks"><div class="wrap">
@@ -314,7 +314,7 @@
     every figure is a floor.</div>
 
 
-  <p class="srcline">Aggregates <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_asn_concentration.csv">relay_asn_concentration.csv</a>, produced by <a href="https://github.com/BEACNpool/ABCDE/blob/main/scripts/relay_asn_lookup.py">relay_asn_lookup.py</a>, <a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_concentration.sql">build_relay_concentration.sql</a>. This half is a live measurement, so your own run will differ from this one. ASN ownership comes from Team Cymru's public IP-to-ASN DNS service.</p>
+  <p class="srcline">Aggregates <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_asn_concentration.csv">relay_asn_concentration.csv</a>, produced by <a href="https://github.com/BEACNLabs/ABCDE/blob/main/scripts/relay_asn_lookup.py">relay_asn_lookup.py</a>, <a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_concentration.sql">build_relay_concentration.sql</a>. This half is a live measurement, so your own run will differ from this one. ASN ownership comes from Team Cymru's public IP-to-ASN DNS service.</p>
 </div></section>
 
 <section class="rsec" id="shared-infrastructure"><div class="wrap">
@@ -337,7 +337,7 @@
     <tbody></tbody></table></div>
 
 
-  <p class="srcline">Aggregates <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_shared_endpoints.csv">relay_shared_endpoints.csv</a>, <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_shared_domains.csv">relay_shared_domains.csv</a>, <a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_shared_hosts.csv">relay_shared_hosts.csv</a>. <b>Mixed:</b> the endpoint and domain tables come from db-sync via <a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_registration.sql">build_relay_registration.sql</a> and reproduce exactly; the resolved-host table needs a sweep (<a href="https://github.com/BEACNpool/ABCDE/blob/main/sql/56_relay_health/build_relay_reachability.sql">build_relay_reachability.sql</a>) and will not.</p>
+  <p class="srcline">Aggregates <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_shared_endpoints.csv">relay_shared_endpoints.csv</a>, <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_shared_domains.csv">relay_shared_domains.csv</a>, <a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_shared_hosts.csv">relay_shared_hosts.csv</a>. <b>Mixed:</b> the endpoint and domain tables come from db-sync via <a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_registration.sql">build_relay_registration.sql</a> and reproduce exactly; the resolved-host table needs a sweep (<a href="https://github.com/BEACNLabs/ABCDE/blob/main/sql/56_relay_health/build_relay_reachability.sql">build_relay_reachability.sql</a>) and will not.</p>
 </div></section>
 
 <section class="rsec" id="method"><div class="wrap">
@@ -364,7 +364,7 @@
   </ol>
 
 
-  <p class="srcline">The prober is <a href="https://github.com/BEACNpool/ABCDE/blob/main/scripts/relay_probe.py">relay_probe.py</a>; the full method and its limits are <a href="https://github.com/BEACNpool/ABCDE/blob/main/docs/27_RELAY_HEALTH_METHOD.md">27_RELAY_HEALTH_METHOD.md</a> and the graded write-up is <a href="https://github.com/BEACNpool/ABCDE/blob/main/findings/F21_relay_registration_and_reachability.md">F21_relay_registration_and_reachability.md</a>.</p>
+  <p class="srcline">The prober is <a href="https://github.com/BEACNLabs/ABCDE/blob/main/scripts/relay_probe.py">relay_probe.py</a>; the full method and its limits are <a href="https://github.com/BEACNLabs/ABCDE/blob/main/docs/27_RELAY_HEALTH_METHOD.md">27_RELAY_HEALTH_METHOD.md</a> and the graded write-up is <a href="https://github.com/BEACNLabs/ABCDE/blob/main/findings/F21_relay_registration_and_reachability.md">F21_relay_registration_and_reachability.md</a>.</p>
 </div></section>
 
 <section class="rsec" id="data"><div class="wrap">
@@ -374,23 +374,23 @@
   <div class="tbl-wrap"><table class="rt">
     <thead><tr><th>Table</th><th>What it holds</th></tr></thead>
     <tbody>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health</a></td><td>One row per current pool: registration shape, reachable hosts, at-tip hosts, shared-endpoint flag, <code>last_checked</code>.</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_shared_endpoints.csv">relay_shared_endpoints</a></td><td>Endpoint strings advertised by more than one current pool.</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_shared_hosts.csv">relay_shared_hosts</a></td><td>Pools sharing a resolved IP — catches per-pool hostnames.</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_shared_domains.csv">relay_shared_domains</a></td><td>Pools sharing a parent domain (heuristic; groups hosting customers too).</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_asn_concentration.csv">relay_asn_concentration</a></td><td>Per network: pools, stake, and how many have their <i>entire</i> reachable relay set inside it.</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_pool_endpoints.csv">relay_pool_endpoints</a></td><td>One row per pool per registered endpoint, with what the last sweep saw &mdash; the join between pools and endpoints.</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_registration_defects.csv">relay_registration_defects</a></td><td>Relay registrations that cannot work &mdash; private/loopback addresses, URLs, unqualified names.</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_foreign_infrastructure.csv">relay_foreign_infrastructure</a></td><td>Pools advertising founding-entity bootstrap backbones as their own relays.</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_registration_changes.csv">relay_registration_changes</a></td><td>Every certificate that changed a pool&rsquo;s relay count &mdash; date, tx hash, before/after, direction.</td></tr>
-      <tr><td class="mono"><a href="https://github.com/BEACNpool/ABCDE/blob/main/data/small/relay_endpoint_status.csv">relay_endpoint_status</a></td><td>The raw per-endpoint sweep, with failure cause and detail.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_pool_health.csv">relay_pool_health</a></td><td>One row per current pool: registration shape, reachable hosts, at-tip hosts, shared-endpoint flag, <code>last_checked</code>.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_shared_endpoints.csv">relay_shared_endpoints</a></td><td>Endpoint strings advertised by more than one current pool.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_shared_hosts.csv">relay_shared_hosts</a></td><td>Pools sharing a resolved IP — catches per-pool hostnames.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_shared_domains.csv">relay_shared_domains</a></td><td>Pools sharing a parent domain (heuristic; groups hosting customers too).</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_asn_concentration.csv">relay_asn_concentration</a></td><td>Per network: pools, stake, and how many have their <i>entire</i> reachable relay set inside it.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_pool_endpoints.csv">relay_pool_endpoints</a></td><td>One row per pool per registered endpoint, with what the last sweep saw &mdash; the join between pools and endpoints.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_registration_defects.csv">relay_registration_defects</a></td><td>Relay registrations that cannot work &mdash; private/loopback addresses, URLs, unqualified names.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_foreign_infrastructure.csv">relay_foreign_infrastructure</a></td><td>Pools advertising founding-entity bootstrap backbones as their own relays.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_registration_changes.csv">relay_registration_changes</a></td><td>Every certificate that changed a pool&rsquo;s relay count &mdash; date, tx hash, before/after, direction.</td></tr>
+      <tr><td class="mono"><a href="https://github.com/BEACNLabs/ABCDE/blob/main/data/small/relay_endpoint_status.csv">relay_endpoint_status</a></td><td>The raw per-endpoint sweep, with failure cause and detail.</td></tr>
     </tbody></table></div>
   <p class="sub" style="margin-top:22px">Method and limits — which bind any use of these numbers —
-    are in <a href="https://github.com/BEACNpool/ABCDE/blob/main/docs/27_RELAY_HEALTH_METHOD.md">docs/27</a>.
-    The graded write-up is <a href="https://github.com/BEACNpool/ABCDE/blob/main/findings/F21_relay_registration_and_reachability.md">F21</a>,
-    the build is <a href="https://github.com/BEACNpool/ABCDE/tree/main/sql/56_relay_health">sql/56_relay_health</a>.
+    are in <a href="https://github.com/BEACNLabs/ABCDE/blob/main/docs/27_RELAY_HEALTH_METHOD.md">docs/27</a>.
+    The graded write-up is <a href="https://github.com/BEACNLabs/ABCDE/blob/main/findings/F21_relay_registration_and_reachability.md">F21</a>,
+    the build is <a href="https://github.com/BEACNLabs/ABCDE/tree/main/sql/56_relay_health">sql/56_relay_health</a>.
     For an operator-clustering signal that does not depend on registration strings at all, see
-    <a href="https://github.com/BEACNpool/ABCDE/blob/main/findings/F10_kes_corotation_pool_operators.md">F10</a>
+    <a href="https://github.com/BEACNLabs/ABCDE/blob/main/findings/F10_kes_corotation_pool_operators.md">F10</a>
     — synchronized KES rotation, read from block headers.</p>
 </div></section>
 
